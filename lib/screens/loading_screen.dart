@@ -17,8 +17,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   // wait for location to load before access latitude & longitude numbers
   void getLocationData() async {
+    // get data from a different class
     var weatherData = await WeatherModel().getWeather();
-    print('weatherdata: $weatherData');
     Navigator.push(
       context,
       MaterialPageRoute(

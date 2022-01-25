@@ -5,6 +5,7 @@ import '../services/location.dart';
 const API_KEY = 'bdb59850de7b9f857a92b23d46114f40';
 const OpenWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather?';
 
+// All network calls happen in this class
 class WeatherModel {
   Future<dynamic> getCityWeather(String cityName) async {
     var url = '${OpenWeatherMapURL}q=$cityName&appid=$API_KEY&units=metric';
